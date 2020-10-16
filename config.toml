@@ -1,0 +1,40 @@
+baseurl                  = "https://data-falopa.netlify.app"           # Your domain name
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "data-falopa"
+theme = "hugo-theme-sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+# googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
+
+[params]
+    dateform             = "Mon Jan 02, 2006"
+    dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
+    favicon              = "sam.ico"
+    homepage             = "main"                           # What to call the home page link
+    footerText           = "data-falopa."
+
+# Metadata for Open Graph and Twitter
+    description          = "This site is usually about giving (trashy) insights into (trashy) data. Nevertheless, it's sometimes about random facts coming from totally meaningful data."               # Max 160 characters show in search results
+    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "data-falopa"
+    # rss                = ""
+
+[params.videoBackground]
+    overlay = "rgba(0, 0, 0, 0.4)" # optional
+
+[[params.mainMenu]]
+    link = "posts"
+    text = "posts"
+
+[[params.mainMenu]]
+    link = "recommendations"
+    text = "recommendations"
+
+[[params.mainMenu]]
+    link = "about"
+    text = "what is data-falopa?"
+
+[imaging]
+    quality = 75
