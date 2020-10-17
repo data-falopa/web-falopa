@@ -39,5 +39,5 @@ pygmentsCodefences       = true
 [imaging]
     quality = 75
 
-[context.deploy-preview.environment]
+[context.production.environment]
     NODE_VERSION = "12.2.0"
