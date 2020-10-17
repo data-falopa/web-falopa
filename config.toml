@@ -1,4 +1,4 @@
-baseurl                  = "https://data-falopa.netlify.app"           # Your domain name
+baseurl                  = "https://data-falopa.netlify.app/"           # Your domain name
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
