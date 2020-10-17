@@ -8,12 +8,12 @@ pygmentsStyle            = "monokai"                        # https://help.farbo
 pygmentsCodefences       = true
 # googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
 
-[build]
-  publish = "public"
-  command = "sudo npm install -g postcss-cli autoprefixer && hugo -v -D"
+#[build]
+#  publish = "public"
+#  command = "sudo npm install -g postcss-cli autoprefixer && hugo -v -D"
 
-[context.production.environment]
-    NODE_VERSION = "12.2.0"
+#[context.production.environment]
+#    NODE_VERSION = "12.2.0"
 
 [params]
     dateform             = "Mon Jan 02, 2006"
@@ -46,5 +46,5 @@ pygmentsCodefences       = true
 [imaging]
     quality = 75
  
-[[plugins]]
-  package = "netlify-plugin-hugo-cache-resources"
+#[[plugins]]
+#  package = "netlify-plugin-hugo-cache-resources"
