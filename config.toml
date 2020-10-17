@@ -41,3 +41,9 @@ pygmentsCodefences       = true
 
 [context.production.environment]
     NODE_VERSION = "12.2.0"
+
+[build]
+  publish = "public"
+ 
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
