@@ -30,11 +30,11 @@ pygmentsCodefences       = true
 
 [[params.mainMenu]]
     link = "recommendations"
-    text = "recommendations"
+    text = "advocacy"
 
 [[params.mainMenu]]
     link = "about"
-    text = "what is data-falopa?"
+    text = "about data-falopa"
 
 [imaging]
     quality = 75
