@@ -9,5 +9,5 @@ If you don't like something about this site, it's probably [Violeta](https://twi
 
 In the future, we plan to include [recommendations](/recommendations) of data visualizations about serious topics.   
 
-Finally, this site is built with [Hugo](https://gohugo.io/) through the [blogdown](https://bookdown.org/yihui/blogdown/) R package, we used the [Call me Sam](https://github.com/victoriadrake/hugo-theme-sam/) theme. Thank you to all the developers and contributors of these amazing tools!
+Finally, this site is built with [Hugo](https://gohugo.io/) through the [blogdown](https://bookdown.org/yihui/blogdown/) R package, we used a modification of the [Call me Sam](https://github.com/victoriadrake/hugo-theme-sam/) theme. Thank you to all the developers and contributors of these amazing tools!
 
