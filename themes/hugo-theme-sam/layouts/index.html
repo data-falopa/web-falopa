@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    
     {{ with .Site.Params.videoBackground }}
         <video class="video" autoplay muted preload loop playsinline>
             {{ range .sources }}
@@ -37,8 +38,14 @@
             </a>
         {{ end }}
         {{ end }}
-
+        <p>
+<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+</p>
+<p>
+<a href="https://outlier-redemption.netlify.app/en/">EN</a> | <a href="https://outlier-redemption.netlify.app/es/">ES</a>
+</p>
     </nav>
+    
 </body>
 
 </html>
