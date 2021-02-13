@@ -1,8 +1,9 @@
-baseurl                  = "https://data-falopa.netlify.app/"           # Your domain name
+baseurl                  = "https://outlier-redemption.netlify.app/"           # Your domain name
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
+defaultContentLanguageInSubdir = true
 isMultilingual           = false
-title                    = "data-falopa"
+title                    = "outlier-redemption"
 theme = "hugo-theme-sam"
 pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
 pygmentsCodefences       = true
@@ -13,28 +14,56 @@ pygmentsCodefences       = true
     dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
     favicon              = "sam.ico"
     homepage             = "main"                           # What to call the home page link
-    footerText           = "data-falopa."
+    footerText           = "outlier-redemption."
 
 # Metadata for Open Graph and Twitter
     description          = "This site is usually about giving (trashy) insights into (trashy) data. Nevertheless, it's sometimes about random facts coming from totally meaningful data."               # Max 160 characters show in search results
-    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
-    title                = "data-falopa"
+    images               = ["card-or.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "outlier-redemption"
     # rss                = ""
 
 [params.videoBackground]
     overlay = "#272822" # optional
 
-[[params.mainMenu]]
-    link = "posts"
-    text = "posts"
+[languages]
+  [languages.en]
+    title = "outlier-redemption"
+    contentDir = "content/english"
+    weight = 1
+    [[languages.en.params.mainMenu]]
+      link = "posts"
+      text = "stories"
+    [[languages.en.params.mainMenu]]
+      link = "https://tinyletter.com/outlier-redemption"
+      text = "subscribe"
+    [[languages.en.params.mainMenu]]
+      link = "about"
+      text = "about outlier-redemption"
+  [languages.es]
+    title = "outlier-redemption"
+    contentDir = "content/spanish"
+    weight = 2
+    [[languages.es.params.mainMenu]]
+      link = "posts"
+      text = "historias"
+    [[languages.es.params.mainMenu]]
+      link = "https://tinyletter.com/violetrzn"
+      text = "suscribite"
+    [[languages.es.params.mainMenu]]
+      link = "about"
+      text = "sobre outlier-redemption"
 
-[[params.mainMenu]]
-    link = "recommendations"
-    text = "advocacy"
+#[[params.mainMenu]]
+#    link = "posts"
+#    text = "posts"
 
-[[params.mainMenu]]
-    link = "about"
-    text = "about data-falopa"
+#[[params.mainMenu]]
+#    link = "recommendations"
+#    text = "advocacy"
+
+#[[params.mainMenu]]
+#    link = "about"
+#    text = "about data-falopa"
 
 [imaging]
     quality = 75

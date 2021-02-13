@@ -1,0 +1,43 @@
+---
+title: I am rich
+author: ~
+date: '2020-10-16'
+slug: iamrich
+categories: []
+tags: []
+showDate: yes
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Holis! Esta entrega es sobre un grupo especial de aplicaciones que puede encontrarse en <a href="https://play.google.com/store?hl=es&amp;gl=US">Google Play store</a>. Me enteré de la existencia de estas aplicaciones en mis tiempos de procrastinación durante <a href="https://www.universite-paris-saclay.fr/recherche/doctorat">mi doctorado</a>, analizando decenas de datasets totalmente random. Este dataset en particular está almacenado en el sitio <a href="https://www.kaggle.com/lava18/google-play-store-apps#googleplaystore.csv">Kaggle</a> y última actualización del mismo fue en 2019.</p>
+<p>Podemos identificar a este curioso grupo por los precios de estas aplicaciones en la tienda. Hagamos un gráfico de los precios en dólares de cada una de las aplicaciones de Google Play. Para esto, usamos un gráfico que se llama histograma. Los histogramas son una forma práctica de visualizar la forma en la que un conjunto de valores se distribuyen. Para construirlo, tenemos que agrupar los precios en cajitas y después contar cuántas aplicaciones caen en cada uno de ellos. El gráfico siguiente muestra los datos:</p>
+<p><img src="/spanish/posts/2020-10-16-iamrich_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>El histograma muestra que la mayoría de las aplicaciones tienen un precio chico, cercano a cero. Sin embargo, vemos que el eje horizontal se extiende hasta valores alrededor de 400. De hecho, mirando con más atención podemos ver que hay una barrita muy pequeña que representa a aplicaciones con un precio cercano a 400. Hagamos zoom para ver mejor:</p>
+<p><img src="/spanish/posts/2020-10-16-iamrich_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Hay alrededor de 15 aplicaciones con un precio similar a 400, ¿por qué? Si vamos un poco más lejos y nos fijamos el nombre de estas aplicaciones:</p>
+<pre><code>##  [1] &quot;most expensive app (H)&quot;               
+##  [2] &quot;&lt;U+0001F48E&gt; I&#39;m rich&quot;                
+##  [3] &quot;I&#39;m Rich - Trump Edition&quot;             
+##  [4] &quot;I am rich&quot;                            
+##  [5] &quot;I am Rich Plus&quot;                       
+##  [6] &quot;I Am Rich Premium&quot;                    
+##  [7] &quot;I am extremely Rich&quot;                  
+##  [8] &quot;I am Rich!&quot;                           
+##  [9] &quot;I am rich(premium)&quot;                   
+## [10] &quot;I Am Rich Pro&quot;                        
+## [11] &quot;I am rich (Most expensive app)&quot;       
+## [12] &quot;I Am Rich&quot;                            
+## [13] &quot;I am Rich&quot;                            
+## [14] &quot;I AM RICH PRO PLUS&quot;                   
+## [15] &quot;Eu Sou Rico&quot;                          
+## [16] &quot;I&#39;m Rich/Eu sou Rico/&lt;U+0623&gt;&lt;U+0646&gt;&lt;U+0627&gt; &lt;U+063A&gt;&lt;U+0646&gt;&lt;U+064A&gt;/&lt;U+6211&gt;&lt;U+5F88&gt;&lt;U+6709&gt;&lt;U+9322&gt;&quot;</code></pre>
+<p>Todos los nombres son equivalentes a “Soy rico” en distintos idiomas. Los desarrolladores de una de estas apps la definen como:</p>
+<blockquote>
+<p>Esta app no hace absolutamente nada, pero funciona como un símbolo de status social.
+El icono de la aplicación es muy atractivo y la app en sí muestra un hermoso y lujoso diamente.
+Esta app es quizás la más cara del mercado y está basada en otras aplicaciones similares del tipo “I am rich”.</p>
+</blockquote>
+<p>El dataset está un poquito desactualizado. En el interín, hubo una limpieza de estas aplicaciones basura. Sin embargo, si buscás estás aplicaciones vas a encontrar que todavía existen varias de ellas y ahora tienen un precio de 349.99 dólares, el máximo actual.</p>
+<p>Quedate atent@ a la próxima entrega para más datos falopa sobre la humanidad.</p>
